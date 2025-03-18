@@ -1,13 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="BYTEEX" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>BYTEEX</title>
   </head>
-  <body>
-    <div id="app"></div>
+  <body class="container">
+    <header class="header-container">
+      <p class="header-text">FREE SHIPPING on orders > $200</p>
+      <p class="header-full-text">
+        CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT) | FREE
+        SHIPPING on orders > $200 | easy 45 day return window.
+      </p>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="hero-container">
+          <svg class="logo-icon" width="200" height="35">
+            <use href="./src/img/sprite.svg#icon-logo"></use>
+          </svg>
+          <h1 class="hero-title">Don’t apologize for being comfortable.</h1>
+          <ul class="img-list">
+            <li class="img-item">
+              <img
+                class="portfolio-photo"
+                src="./src/img/hero/photo-two.jpg"
+                alt="Woman Two"
+                width="109"
+                height="165"
+              />
+            </li>
+            <li class="img-item">
+              <img
+                class="portfolio-photo"
+                src="./src/img/hero/photo-one.jpg"
+                alt="Woman One"
+                width="136"
+                height="221"
+              />
+            </li>
+            <li class="img-item">
+              <img
+                class="portfolio-photo"
+                src="./src/img/hero/photo-three.jpg"
+                alt="Woman Three"
+                width="109"
+                height="165"
+              />
+            </li>
+          </ul>
+          <div class="list-container">
+            <ul class="hero-list">
+              <li class="hero-icon">
+                <svg class="item-icon" width="20" height="20">
+                  <use href="./src/img/sprite.svg#icon-sun"></use>
+                </svg>
+              </li>
+              <li class="item-text">
+                <p class="hero-text">
+                  Beautiful, comfortable loungewear for day or night.
+                </p>
+              </li>
+            </ul>
+            <ul class="hero-list">
+              <li class="hero-icon">
+                <svg class="item-icon" width="20" height="20">
+                  <use href="./src/img/sprite.svg#icon-basket"></use>
+                </svg>
+              </li>
+              <li class="item-text">
+                <p class="hero-text">
+                  No wasteful extras, like tags or plastic packaging.
+                </p>
+              </li>
+            </ul>
+            <ul class="hero-list">
+              <li class="hero-icon">
+                <svg class="item-icon" width="20" height="20">
+                  <use href="./src/img/sprite.svg#icon-line"></use>
+                </svg>
+              </li>
+              <li class="item-text">
+                <p class="hero-text">
+                  Our signature fabric is incredibly comfortable — unlike
+                  anything you’ve ever felt.
+                </p>
+              </li>
+            </ul>
+          </div>
+          <button class="hero-button" type="button">
+            Customize Your Outfit
+            <svg class="button-icon" width="23" height="10">
+              <use href="./src/img/sprite.svg#icon-vector-one"></use>
+            </svg>
+          </button>
+          <div class="hero-comment-container">
+            <img
+              class="comment-photo"
+              src="./src/img/hero/comment.png"
+              alt="Author comment"
+              width="39"
+              height="39"
+            />
+            <ul class="star-list">
+              <li>
+                <svg class="icon-star" width="10" height="10">
+                  <use href="./src/img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon-star" width="10" height="10">
+                  <use href="./src/img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon-star" width="10" height="10">
+                  <use href="./src/img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon-star" width="10" height="10">
+                  <use href="./src/img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+              <li>
+                <svg class="icon-star" width="10" height="10">
+                  <use href="./src/img/sprite.svg#icon-star"></use>
+                </svg>
+              </li>
+            </ul>
+            <p class="star-text">One of 500+ 5 Star Reviews Online</p>
+            <div class="comment-text">
+              <p class="author-name">Jane, S.</p>
+              <p class="comment">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque sed sollicitudin dolor, non sodales justo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
