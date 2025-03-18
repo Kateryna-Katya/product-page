@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
     <title>BYTEEX</title>
   </head>
   <body class="container">
@@ -44,6 +44,7 @@
                 alt="Woman Two"
                 width="109"
                 height="165"
+                loading="lazy"
               />
             </li>
             <li class="img-item">
@@ -53,6 +54,7 @@
                 alt="Woman One"
                 width="136"
                 height="221"
+                loading="lazy"
               />
             </li>
             <li class="img-item">
@@ -62,6 +64,7 @@
                 alt="Woman Three"
                 width="109"
                 height="165"
+                loading="lazy"
               />
             </li>
           </ul>
@@ -117,6 +120,7 @@
               alt="Author comment"
               width="39"
               height="39"
+              loading="lazy"
             />
             <ul class="star-list">
               <li>
@@ -152,6 +156,80 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Pellentesque sed sollicitudin dolor, non sodales justo.
               </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits-section">
+        <h2 class="benefits-title">Loungewear you can be proud of.</h2>
+        <div class="custom-navigation gallery-nav">
+          <button class="custom-arrow custom-prev" aria-label="Previous slide">
+            <svg class="arrow" width="20" height="20" aria-hidden="true">
+              <use href="./src/img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+
+          <button class="custom-arrow custom-next" aria-label="Next slide">
+            <svg class="arrow" width="20" height="20" aria-hidden="true">
+              <use href="./src/img/sprite.svg#icon-arrow"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="swiper gallery-main">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                src="./src/img/hero/photo-one.jpg"
+                alt="Image 1"
+                width="303"
+                height="453"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./src/img/hero/photo-two.jpg"
+                alt="Image 2"
+                width="303"
+                height="553"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./src/img/hero/photo-three.jpg"
+                alt="Image 3"
+                width="303"
+                height="453"
+                loading="lazy"
+              />
+            </div>
+            <div class="swiper-slide">
+              <img
+                src="./src/img/benefits/photo-four.jpg"
+                alt="Image 4"
+                width="303"
+                height="453"
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Мініатюри -->
+        <div class="swiper gallery-thumbs">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="./src/img/hero/photo-one.jpg" alt="Thumbnail 1" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/hero/photo-two.jpg" alt="Thumbnail 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/hero/photo-three.jpg" alt="Thumbnail 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="./src/img/benefits/photo-four.jpg" alt="Thumbnail 4" />
             </div>
           </div>
         </div>

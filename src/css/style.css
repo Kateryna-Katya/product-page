@@ -193,3 +193,141 @@
   color: #676869;
   margin-left: 13px;
 }
+/* benefits */
+
+.benefits-title {
+  margin-top: 224px;
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: "Niramit", sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.30769;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #01005b;
+  margin-bottom: 25px;
+}
+/* benefits swiper */
+.gallery-thumbs {
+  margin-top: 10px;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 21px;
+  height: 23px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.gallery-thumbs img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+.arrow {
+  stroke: #676869;
+}
+.custom-arrow {
+  display: flex;
+  align-items: baseline;
+}
+.custom-navigation {
+  top: 60%;
+  width: 100%;
+  transform: translateY(-40%);
+
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+}
+.custom-prev {
+  position: absolute;
+  left: 20px;
+}
+
+.custom-next {
+  position: absolute;
+  right: 20px;
+}
+
+.custom-prev,
+.custom-next {
+  border-radius: 60px;
+  padding: 14px;
+  background-color: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.arrow {
+  fill: #f1f1f1;
+  transition: fill 0.3s ease;
+  opacity: 0.8;
+}
+.custom-next {
+  transform: rotate(180deg);
+}
+.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.gallery-main .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-main img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.benefits-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery-main {
+  width: 100%;
+  max-width: 500px;
+}
+
+.gallery-thumbs {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.gallery-thumbs .swiper-slide {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border 0.3s;
+}
+
+.gallery-thumbs .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.gallery-thumbs .swiper-slide.swiper-slide-thumb-active {
+  border: 2px solid #fff;
+}
