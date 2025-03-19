@@ -1,7 +1,10 @@
 import Swiper from 'swiper';
 import { Navigation, Thumbs, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
+import 'swiper/css/pagination';
 
-import 'swiper/css/bundle';
 
 document.addEventListener('DOMContentLoaded', function () {
     let logosSwiper;

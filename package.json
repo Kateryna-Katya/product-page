@@ -6,15 +6,26 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/product-page/",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:preview": "vite build && vite preview",
+    "predeploy": "npm run build",
+    "deploy": "netlify deploy -p"
   },
-  "devDependencies": {
-    "vite": "^5.2.8",
-    "vite-plugin-html": "^3.2.2"
+"devDependencies": {
+    "glob": "^8.1.0",
+    "netlify-cli": "^17.38.1",
+    "sass": "^1.83.0",
+    "sharp": "^0.33.5",
+    "svgo": "^3.3.2",
+    "vite": "^4.5.5",
+    "vite-plugin-image-optimizer": "^1.1.8"
   },
+  "author": "Andrii Kyrylenko <z9877969@gmail.com>",
+  "license": "ISC",
   "dependencies": {
-    "glob": "^11.0.1",
-    "swiper": "^11.2.5",
+    "12": "^1.0.2",
+    "accordion-js": "^3.3.4",
+    "swiper": "^11.1.15",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   }
