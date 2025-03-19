@@ -1,15 +1,12 @@
 import Swiper from 'swiper';
-import { Navigation, Thumbs, Pagination } from 'swiper/modules';
+import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
-import 'swiper/css/thumbs';
 import 'swiper/css/pagination';
-
 
 document.addEventListener('DOMContentLoaded', function () {
     let logosSwiper;
 
-    
     function initLogosSwiper() {
         const logosSlider = document.querySelector('.logos-slider');
 
@@ -29,16 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
                             return `<div class="${className} pagination-item"></div>`;
                         },
                     },
-                    on: {
-                        slideChange: function () {
-                            const activeIndex = this.realIndex;
-                            const items = document.querySelectorAll('.pagination-item');
-
-                            items.forEach((item, index) => {
-                                item.classList.toggle('active', index === activeIndex);
-                            });
-                        },
-                    },
                 });
             }
         } else {
@@ -54,38 +41,28 @@ document.addEventListener('DOMContentLoaded', function () {
     initLogosSwiper();
     window.addEventListener('resize', initLogosSwiper);
 
-   
-    const thumbsSwiper = new Swiper('.gallery-thumbs', {
-        modules: [Navigation, Thumbs],
-        spaceBetween: 10,
-        slidesPerView: 'auto',
-        watchSlidesProgress: true,
-        freeMode: true,
-    });
-
-   
-    new Swiper('.gallery-slider', {
-        modules: [Navigation, Thumbs],
-        loop: true,
-        navigation: {
-            nextEl: '.custom-next',
-            prevEl: '.custom-prev',
-        },
-        thumbs: {
-            swiper: thumbsSwiper,
-        },
-    });
-
-    
+    // Продуктовий слайдер (1 слайд)
     new Swiper('.product-slider', {
         modules: [Navigation],
-      
+        slidesPerView: 1,
         spaceBetween: 10,
         centeredSlides: true,
         loop: true,
         navigation: {
             nextEl: '.custom-next-button',
             prevEl: '.custom-prev-button',
+        },
+    });
+
+    // 🔥 **Новий слайдер для відгуків (1 слайд, навігація)**
+    new Swiper('.rewiew-slider', {
+        modules: [Navigation],
+        slidesPerView: 1, // Показуємо лише 1 слайд
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.custom-next-rewiew',
+            prevEl: '.custom-prev-rewiew',
         },
     });
 });

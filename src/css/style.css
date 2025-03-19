@@ -515,7 +515,7 @@ margin-bottom: 66px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 56px 23px;
+  padding: 56px 23px 25px;
   position: relative;
 }
 .custom-navigation-product {
@@ -578,3 +578,79 @@ letter-spacing: 0.03em;
 text-align: center;
 color: #676869;
 }
+/* rewiews */
+.rewiews{
+  position: relative;
+}
+.rewiews-title{
+  font-family: "Niramit", sans-serif;
+font-weight: 400;
+font-size: 26px;
+line-height: 1.53846;
+letter-spacing: 0.04em;
+text-align: center;
+color: #01005b;
+margin-bottom: 20px;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.rewiews-text{
+  font-family: "Niramit", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.53333;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #676869;
+  max-width: 385px; 
+ 
+  margin-bottom: 15px;
+margin-left: auto;
+margin-right: auto;
+}
+.rewiews-baner{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.rewiew-container{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+border-radius: 8px;
+max-width: 299px;
+max-height: 261px;
+box-shadow: 0 3px 10px 1px rgba(0, 0, 0, 0.08);
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+padding-bottom: 20px;
+
+}
+.rewiew-wrapper{
+  background-color: #fff;
+}
+
+.custom-navigation-rewiew {
+  top: 460px;
+  width: 100%;
+   position: absolute;
+  display: flex;
+  justify-content: space-between;
+  z-index: 20;
+}
+.custom-next-rewiew {
+  transform: rotate(180deg);
+}
+.custom-prev-rewiew{
+  position: absolute;
+  left: 50px;
+}
+.custom-next-rewiew{
+  position: absolute;
+right: 50px;
+}
+
