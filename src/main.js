@@ -1,12 +1,13 @@
 import Swiper from 'swiper';
 import { Navigation, Thumbs, Pagination } from 'swiper/modules';
 import 'swiper/css';
+
  
 
 document.addEventListener('DOMContentLoaded', function () {
     let logosSwiper;
 
-    // Ініціалізація logosSwiper
+
     function initLogosSwiper() {
         const logosSlider = document.querySelector('.logos-slider');
 
@@ -51,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     initLogosSwiper();
     window.addEventListener('resize', initLogosSwiper);
 
-    // Ініціалізація thumbsSwiper (галерея)
+
     const thumbsSwiper = new Swiper('.gallery-thumbs', {
         modules: [Navigation, Thumbs],
         spaceBetween: 10,
@@ -60,7 +61,6 @@ document.addEventListener('DOMContentLoaded', function () {
         freeMode: true,
     });
 
-    // Ініціалізація gallery-slider (головна галерея)
     new Swiper('.gallery-slider', {
         modules: [Navigation, Thumbs],
         loop: true,
@@ -73,16 +73,25 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
 
-    // ✅ Додаємо новий product-slider (продуктовий слайдер)
+
     new Swiper('.product-slider', {
         modules: [Navigation],
-        // slidesPerView: 1,
         spaceBetween: 10,
         centeredSlides: true,
         loop: true,
         navigation: {
             nextEl: '.custom-next-button',
             prevEl: '.custom-prev-button',
+        },
+    });
+    new Swiper('.rewiew-slider', {
+        modules: [Navigation],
+        slidesPerView: 1, 
+        spaceBetween: 10,
+        loop: true,
+        navigation: {
+            nextEl: '.custom-next-rewiew',
+            prevEl: '.custom-prev-rewiew',
         },
     });
 });
