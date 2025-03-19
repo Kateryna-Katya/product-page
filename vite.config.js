@@ -11,7 +11,6 @@ export default defineConfig(({ command }) => {
     root: 'src',
     build: {
       sourcemap: true,
-
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
@@ -26,5 +25,14 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
     },
     plugins: [injectHTML(), FullReload(['./src/**/**.html'])],
+    resolve: {
+      alias: {
+        swiper: 'swiper/bundle',
+      },
+    },
+    optimizeDeps: {
+      include: ['swiper'],
+    },
+    base: '/product-page/',
   };
 });
