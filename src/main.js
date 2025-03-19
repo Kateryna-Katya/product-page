@@ -1,5 +1,5 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/css/bundle';
+import { Navigation, Thumbs, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
  
