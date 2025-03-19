@@ -581,6 +581,7 @@ color: #676869;
 /* rewiews */
 .rewiews{
   position: relative;
+  
 }
 .rewiews-title{
   font-family: "Niramit", sans-serif;
@@ -652,5 +653,13 @@ padding-bottom: 20px;
 .custom-next-rewiew{
   position: absolute;
 right: 50px;
+}
+.rewiew-button{
+  margin-left: 45px;
+margin-top: 20px;
+}
+.star-container-rewiew{
+  margin-left: 80px;
+
 }
 

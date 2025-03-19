@@ -1,5 +1,5 @@
-import Swiper from 'swiper';
-import { Navigation, Thumbs, Pagination } from 'swiper/modules';
+import Swiper from 'swiper/bundle';
+import 'swiper/css/bundle';
 import 'swiper/css';
 
  
@@ -85,13 +85,29 @@ document.addEventListener('DOMContentLoaded', function () {
         },
     });
     new Swiper('.rewiew-slider', {
-        modules: [Navigation],
-        slidesPerView: 1, 
+        modules: [Navigation, Pagination], // Додаємо модуль Pagination
+        slidesPerView: 1,
         spaceBetween: 10,
         loop: true,
         navigation: {
             nextEl: '.custom-next-rewiew',
             prevEl: '.custom-prev-rewiew',
+        },
+        pagination: { // Винесено за межі navigation
+            el: '.custom-pagination',
+            clickable: true,
+            renderBullet: function (index, className) {
+                return `<div class="${className} pagination-item"></div>`;
+            },
+        },
+        on: {
+            slideChange: function () {
+                const activeIndex = this.realIndex; // Отримуємо активний слайд
+                const items = document.querySelectorAll('.pagination-item');
+                items.forEach((item, index) => {
+                    item.classList.toggle('active', index === activeIndex);
+                });
+            },
         },
     });
 });
