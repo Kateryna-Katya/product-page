@@ -63,7 +63,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     new Swiper('.gallery-slider', {
         modules: [Navigation, Thumbs],
+        slidesPerView: 1,
         loop: true,
+        centeredSlides: true,
         navigation: {
             nextEl: '.custom-next',
             prevEl: '.custom-prev',

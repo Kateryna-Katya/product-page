@@ -30,6 +30,7 @@
       </p>
     </header>
     <main>
+      <!-- hero -->
       <section class="hero-section">
         <div class="hero-container">
           <svg class="logo-icon" width="200" height="35">
@@ -49,7 +50,7 @@
             </li>
             <li class="img-item">
               <img
-                class="portfolio-photo"
+                class="portfolio-photo-one"
                 src="./src/img/hero/photo-one.jpg"
                 alt="Woman One"
                 width="136"
@@ -152,32 +153,34 @@
             <p class="star-text">One of 500+ 5 Star Reviews Online</p>
             <div class="comment-text">
               <p class="author-name">Jane, S.</p>
-              <p class="comment">
+              <p class="comment coment-hero">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Pellentesque sed sollicitudin dolor, non sodales justo.
               </p>
+              <p class="coment-hero-text">Overjoyed with my Loungewear set. I have the jogger and the sweatshirt. Quality product on every level. From the compostable packaging, to the supplied washing bag, even the garments smells like fresh herbs when I first held them. </p>
             </div>
           </div>
         </div>
       </section>
+      <!-- Benefits -->
       <section class="benefits-section">
         <p class="text-title">as seen in</p>
         <div class="swiper logos-slider">
           <div class="swiper-wrapper logos-wrapper">
               <div class="swiper-slide ">
-                  <img src="./src/img/benefits/eco-stylist.png" alt="Eco Stylist" width="116" height="15" loading="lazy" />
+                  <img src="./src/img/benefits/eco-stylist.png" alt="Eco Stylist" class="slide-img" width="116" height="15" loading="lazy" />
               </div>
               <div class="swiper-slide logos-img">
-                  <img src="./src/img/benefits/canadian-living.png" alt="Canadian Living" width="72" height="34" loading="lazy" />
+                  <img src="./src/img/benefits/canadian-living.png" alt="Canadian Living" class="slide-img-canadian" width="72" height="34" loading="lazy" />
               </div>
               <div class="swiper-slide">
-                  <img src="./src/img/benefits/jillian.png" alt="Jillian Harris" width="116" height="29" loading="lazy" />
+                  <img src="./src/img/benefits/jillian.png" alt="Jillian Harris" class="slide-img" width="116" height="29" loading="lazy" />
               </div>
               <div class="swiper-slide">
-                  <img src="./src/img/benefits/eco-hub.png" alt="The Eco Hub" width="116" height="15" loading="lazy" />
+                  <img src="./src/img/benefits/eco-hub.png" alt="The Eco Hub" class="slide-img" width="116" height="15" loading="lazy" />
               </div>
               <div class="swiper-slide">
-                  <img src="./src/img/benefits/trendhunter.png" alt="Trendhunter" width="116" height="15" loading="lazy" />
+                  <img src="./src/img/benefits/trendhunter.png" alt="Trendhunter" class="slide-img" width="116" height="15" loading="lazy" />
               </div>
           </div>
           </div>
@@ -185,13 +188,14 @@
           <div class="custom-slider">
             <div class="custom-pagination">
               <div class="pagination-item active"></div>
-              <div class="pagination-item"></div>             
+              <div class="pagination-item"></div>    
+              <div class="pagination-item"></div>         
           </div>
       </div>
         
         <h2 class="benefits-title">Loungewear you can be proud of.</h2>
         
- 
+        
         <div class="custom-navigation">
           <button class="custom-arrow custom-prev" aria-label="Previous slide">
             <svg class="arrow" width="20" height="20" aria-hidden="true">
@@ -238,6 +242,7 @@
               <img src="./src/img/benefits/photo-four.jpg" alt="Thumbnail 4" />
             </div>
           </div>
+        
         </div>
         
         <p class="model-name">White Robe</p>
@@ -295,13 +300,13 @@
       </li>
       </ul>          
         </div>
-        <button class="hero-button" type="button">
+        <button class="hero-button benefits-button" type="button">
           Customize Your Outfit
           <svg class="button-icon" width="23" height="10">
             <use href="./src/img/sprite.svg#icon-vector-one"></use>
           </svg>
         </button>
-        <div class="star-container">
+        <div class="star-container star-container-benfits ">
         <ul class="star-list-benefits">
           <li>
             <svg class="icon-star" width="14" height="13">
@@ -373,11 +378,17 @@
           </p>
         </li>
       </ul>
+      <button class="hero-button benefits-button-user" type="button">
+        Customize Your Outfit
+        <svg class="button-icon" width="23" height="10">
+          <use href="./src/img/sprite.svg#icon-vector-one"></use>
+        </svg>
+      </button>
 
       </section>
       <!-- product order/how it's works -->
       <section class="product-order">
-        <h2 class="user-title">Comfort made easy</h2>
+        <h2 class="user-title product-title">Comfort made easy</h2>
         <div class="custom-navigation-product">
           <button class="custom-arrow custom-prev-button" aria-label="Previous slide">
             <svg class="arrow" width="20" height="20" aria-hidden="true">
@@ -416,13 +427,13 @@
               </div>
           </div>
         </div>
-        <button class="hero-button" type="button">
+        <button class="hero-button product-button" type="button">
           Customize Your Outfit
           <svg class="button-icon" width="23" height="10">
             <use href="./src/img/sprite.svg#icon-vector-one"></use>
           </svg>
         </button>
-        <div class="star-container">
+        <div class="star-container star-product-container">
         <ul class="star-list-benefits">
           <li>
             <svg class="icon-star" width="14" height="13">
@@ -458,6 +469,7 @@
         <h2 class="rewiews-title">What are our fans saying?</h2>
         <p class="rewiews-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat. Fusce non nibh luctus.</p>
         <img class="rewiews-baner" src="./src/img/rewiews/rewiew.png" alt="Eco Stylist" width="421" height="29" loading="lazy" />
+        <img class="rewiews-baner-big" src="./src/img/rewiews/big-photo.svg" alt="Eco Stylist" width="421" height="29" loading="lazy" />
              
           <div class="custom-navigation-rewiew">
             <button class="custom-arrow custom-prev-rewiew" aria-label="Previous slide">
@@ -578,7 +590,7 @@
       </section>
       <!-- FAQ -->
       <section class="faq">
-        <h2 class="faq-title">frequently asked questions.</h2>
+        <h2 class="faq-title">Frequently asked questions.</h2>
         <ul class="faq-acc">
           <li class="faq-acc-el faq-current">
             <h3 class="faq-acc-el-title">
@@ -731,6 +743,7 @@
           </ul>
           <p class="star-text-benefits">One of 500+ 5 Star Reviews Online</p>
         </div>
+        <img class="faq-photo" src="./src/img/rewiews/girls.png" alt="Girls" width="430" height="645" loading="lazy" />
       </section>
       <!-- green -->
        <section class="green">
@@ -745,7 +758,7 @@
             <p class="green-text">3,927 kg</p>
             <p class="green-subtext">of CO2 saved</p>
           </li>
-          <li class="green-item">
+          <li class="green-item green-item-second">
             <div class="green-container">
             <svg class="icon-green" width="31" height="20">
               <use href="./src/img/sprite.svg#icon-ho"></use>
@@ -754,6 +767,15 @@
             <p class="green-text">2,546,167 days</p>
             <p class="green-subtext">of drinking water saved</p>
           </li>
+          <li class="green-item">
+            <div class="green-container">
+            <svg class="icon-green" width="31" height="20">
+              <use href="./src/img/sprite.svg#icon-co"></use>
+            </svg>
+          </div>
+            <p class="green-text">7,321 kWh</p>
+            <p class="green-subtext">of energy saved</p>
+          </li>
         </ul>
        </section>
        <!-- final -->
@@ -761,10 +783,10 @@
         <h2 class="final-title">Find something you love.</h2>
         <p class="final-text">Click below to browse our collection!</p>
         <div class="final-container">
-          <ul class="img-list">
+          <ul class="img-list final-img-list">
             <li class="img-item">
               <img
-                class="portfolio-photo"
+                class="portfolio-photo final-img"
                 src="./src/img/hero/photo-two.jpg"
                 alt="Woman Two"
                 width="109"
@@ -774,7 +796,7 @@
             </li>
             <li class="img-item">
               <img
-                class="portfolio-photo"
+                class="portfolio-photo final-img-one"
                 src="./src/img/hero/photo-one.jpg"
                 alt="Woman One"
                 width="139"
@@ -782,7 +804,7 @@
                 loading="lazy"
               />
             </li>
-            <li class="img-item">
+            <li class="img-item final-img">
               <img
                 class="portfolio-photo"
                 src="./src/img/hero/photo-three.jpg"
@@ -799,7 +821,7 @@
               <use href="./src/img/sprite.svg#icon-vector-one"></use>
             </svg>
           </button>
-          <div class="star-container star-container-rewiew">
+          <div class="star-container star-container-rewiew star-container-final ">
           <ul class="star-list-benefits">
             <li>
               <svg class="icon-star" width="14" height="13">
@@ -829,6 +851,34 @@
           </ul>
           <p class="star-text-benefits">One of 500+ 5 Star Reviews Online</p>
         </div>
+        <img
+                class="final-buy"
+                src="./src/img/final/buy.png"
+                alt="Buy"
+                width="364"
+                height="22"
+                loading="lazy"/>
+                <ul class="final-list">
+                  <li class="buy-item">
+                    <svg class="buy-icon" width="33" height="33" aria-hidden="true">
+                      <use href="./src/img/sprite.svg#icon-car"></use>
+                    </svg>
+                    <p class="buy-text">FREE Shipping on Orders over $200</p>
+                  </li>
+                  <li class="buy-item buy-item-second">
+                    <svg class="buy-icon" width="33" height="33" aria-hidden="true">
+                      <use href="./src/img/sprite.svg#icon-car"></use>
+                    </svg>
+                    <p class="buy-text">Over 500+ 5 Star                      Reviews Online</p>
+                  </li>
+                  <li class="buy-item">
+                    <svg class="buy-icon" width="33" height="33" aria-hidden="true">
+                      <use href="./src/img/sprite.svg#icon-car"></use>
+                    </svg>
+                    <p class="buy-text">Made ethically
+                      and responsibly.</p>
+                  </li>
+                </ul>
           
 
         </div>
